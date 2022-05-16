@@ -244,6 +244,56 @@ html {
   text-align: center;
 }
 
+.menu__item,
+.menu__item--photo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menu__item--photo {
+  flex: 3 1 30ch;
+  height: calc(282px + 5vw);
+  overflow: hidden;
+}
+
+.menu__item--photo img {
+  max-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.menu__item {
+  border: 2px solid #f2f2f2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.menu__item--title {
+  margin: 0;
+  font-size: clamp(1.4em, 2.1vw, 2.1em);
+  font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+}
+.menu__item--title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Body Layout */
+.big {
+  /* width: clamp(320px, 65%, 65%); */
+  width: clamp(320px, 35%, 35%);
+
+  padding: 24px;
+}
+.small {
+  width: clamp(320px, 35%, 480px);
+  padding: 24px;
+}
+
 /* MEDIA QUERIES */
 
 /* NAVBAR MENU */
