@@ -238,6 +238,18 @@ html {
   /* max-width: 1200px; */
 }
 
+/* Body Layout */
+.big {
+  /* width: clamp(320px, 65%, 65%); */
+  width: clamp(320px, 35%, 35%);
+
+  padding: 24px;
+}
+.small {
+  width: clamp(320px, 35%, 480px);
+  padding: 24px;
+}
+
 .menu__Title {
   font-size: 4rem;
   margin: 1rem 0;
@@ -277,21 +289,27 @@ html {
   font-size: clamp(1.4em, 2.1vw, 2.1em);
   font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 }
-.menu__item--title a {
+/* .menu__item--title a {
   text-decoration: none;
   color: inherit;
+} */
+
+.menu__item--buy {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #9d3b3b;
+  color: white;
+  border: 1px #9d3b3b solid;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  padding: 0.5em 2em;
+  margin-top: 2rem;
 }
 
-/* Body Layout */
-.big {
-  /* width: clamp(320px, 65%, 65%); */
-  width: clamp(320px, 35%, 35%);
-
-  padding: 24px;
-}
-.small {
-  width: clamp(320px, 35%, 480px);
-  padding: 24px;
+.menu__item--buy:hover {
+  background-color: white;
+  color: #9d3b3b;
+  border: 1px #9d3b3b solid;
 }
 
 /* MEDIA QUERIES */
