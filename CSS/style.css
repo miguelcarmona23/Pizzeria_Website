@@ -283,6 +283,10 @@ html {
   object-position: 50% 50%;
 }
 
+.menu__item-info {
+  padding: 1rem;
+}
+
 .menu__item--title {
   margin: 0;
   font-size: clamp(1.4em, 2.1vw, 2.1em);
