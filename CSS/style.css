@@ -288,7 +288,8 @@ html {
 }
 
 .menu__item--title {
-  margin: 0;
+  /* margin: 0; */
+  margin-bottom: 1rem;
   font-size: clamp(1.4em, 2.1vw, 2.1em);
   font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 }
