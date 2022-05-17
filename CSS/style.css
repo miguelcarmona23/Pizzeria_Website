@@ -298,6 +298,10 @@ html {
   color: inherit;
 } */
 
+.menu__item--value {
+  font-size: clamp(1.4em, 2.1vw, 1.7em);
+}
+
 .menu__item--buy {
   text-decoration: none;
   display: inline-block;
