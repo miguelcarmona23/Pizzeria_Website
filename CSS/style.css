@@ -245,10 +245,6 @@ html {
   /* width: clamp(320px, 35%, 35%); */
   padding: 24px;
 }
-.small {
-  width: clamp(320px, 35%, 480px);
-  padding: 24px;
-}
 
 .menu__Title {
   font-size: 4rem;
