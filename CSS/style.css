@@ -236,20 +236,24 @@ html {
 .menu__container {
   width: 100%;
   height: 100%;
-  /* max-width: 1200px; */
-}
-
-/* Body Layout */
-.big {
-  width: clamp(320px, 65%, 65%);
-  /* width: clamp(320px, 35%, 35%); */
-  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu__Title {
   font-size: 4rem;
   margin: 1rem 0;
   text-align: center;
+}
+
+.big {
+  /* width: clamp(320px, 65%, 65%); */
+  /* width: clamp(320px, 35%, 35%); */
+  width: clamp(23ch, 60%, 46ch);
+
+  padding: 24px;
 }
 
 .menu__item,
