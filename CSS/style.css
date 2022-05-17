@@ -10,6 +10,7 @@ html {
   font-family: "Roboto";
   overflow-x: hidden;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -240,9 +241,8 @@ html {
 
 /* Body Layout */
 .big {
-  /* width: clamp(320px, 65%, 65%); */
-  width: clamp(320px, 35%, 35%);
-
+  width: clamp(320px, 65%, 65%);
+  /* width: clamp(320px, 35%, 35%); */
   padding: 24px;
 }
 .small {
