@@ -13,6 +13,8 @@ html {
   scroll-behavior: smooth;
 }
 
+/*=============================== NAVBAR SECTION ===============================*/
+
 .header {
   padding: 1.5rem;
   margin: 0 auto;
@@ -154,13 +156,9 @@ html {
   align-items: center;
   height: auto;
 }
+/*=============================== END OF NAVBAR SECTION ===============================*/
 
-/* .main {
-  height: 100vh;
-  width: 100%;
-  background-color: teal;
-} */
-
+/*=============================== HERO SECTION ===============================*/
 #hero {
   width: 100%;
   height: 100vh;
@@ -227,7 +225,9 @@ html {
   border: 1px #9d3b3b solid;
 }
 
-/* MENU SECTION */
+/*=============================== END OF HERO SECTION ===============================*/
+
+/*=============================== MENU SECTION ===============================*/
 #menu {
   width: 100%;
   height: 100vh;
@@ -319,10 +319,11 @@ html {
   color: #9d3b3b;
   border: 1px #9d3b3b solid;
 }
+/*=============================== END OF MENU SECTION =============================== */
 
-/* MEDIA QUERIES */
+/*=============================== MEDIA QUERIES ===============================*/
 
-/* NAVBAR MENU */
+/*=============================== NAVBAR MENU ===============================*/
 @media only screen and (min-width: 1200px) {
   .header .navBar {
     width: auto;
@@ -356,9 +357,9 @@ html {
     display: none;
   }
 }
-/* END OF NAVBAR MENU */
+/*=============================== END OF NAVBAR MENU ===============================*/
 
-/* HERO SECTION */
+/*=============================== HERO SECTION ===============================*/
 @media only screen and (max-width: 1000px) {
   #hero {
     background: linear-gradient(rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0.4111)),
@@ -396,19 +397,20 @@ html {
     max-width: 100%;
     font-size: 1.4rem;
   }
-  /* END OF HERO SECTION */
-  /* NAVBAR MENU */
+  /*=============================== END OF HERO SECTION ===============================*/
+
+  /*=============================== NAVBAR MENU ===============================*/
   .header header .navBar .navBar-button a {
     font-size: 1.8rem;
     padding: 0.5em 2em;
   }
-  /* END OF NAVBAR MENU */
+  /*=============================== END OF NAVBAR MENU ===============================*/
 }
 
-/* NAVBAR MENU */
+/*=============================== NAVBAR MENU ===============================*/
 @media only screen and (max-width: 435px) {
   .header header .brand-logo img {
     width: 80%;
   }
 }
-/* END OF NAVBAR MENU */
+/*=============================== END OF NAVBAR MENU ===============================*/
