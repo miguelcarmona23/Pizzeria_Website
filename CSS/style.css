@@ -512,6 +512,7 @@ figure.reviews__Comment .reviewer h5 span {
   background-color: white;
   color: #9d3b3b;
   border: 1px #9d3b3b solid;
+  cursor: pointer;
 }
 
 /*=============================== END OF DOWNLOAD MENU SECTION =============================== */
