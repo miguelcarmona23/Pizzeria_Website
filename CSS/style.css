@@ -13,6 +13,19 @@ html {
   scroll-behavior: smooth;
 }
 
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+  color: inherit; /* Removes blue colors from links too */
+  text-decoration: inherit; /* Removes no underline */
+}
+
 /*=============================== NAVBAR SECTION ===============================*/
 
 .header {
@@ -449,6 +462,57 @@ figure.reviews__Comment .reviewer h5 span {
 /*=============================== END OF REVIEWS SECTION =============================== */
 
 /*===============================  DOWNLOAD MENU SECTION =============================== */
+.downloadMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.downloadMenu__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.downloadMenu--contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.downloadMenu--title h2 {
+  display: inline-block;
+  font-size: 3rem;
+  letter-spacing: -2px;
+  margin: 0 2vw 0 0;
+}
+
+/* .downloadMenu--button button a {
+  font-size: calc(17pt + 1.25vw);
+  letter-spacing: 3px;
+} */
+
+.downloadMenu--clickBtn {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #9d3b3b;
+  color: white;
+  border: 1px #9d3b3b solid;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  padding: 0.5em 2em;
+}
+
+.downloadMenu--clickBtn:hover {
+  background-color: white;
+  color: #9d3b3b;
+  border: 1px #9d3b3b solid;
+}
+
 /*=============================== END OF DOWNLOAD MENU SECTION =============================== */
 
 /*=============================== MEDIA QUERIES ===============================*/
