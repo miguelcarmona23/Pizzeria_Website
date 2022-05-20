@@ -518,6 +518,83 @@ figure.reviews__Comment .reviewer h5 span {
 /*=============================== END OF DOWNLOAD MENU SECTION =============================== */
 
 /*=============================== FOOTER SECTION ===============================*/
+#footer {
+  color: #fff;
+  font-size: 1em;
+  padding: 38px 0;
+  box-sizing: border-box;
+  background: #262626;
+  width: 100%;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+  padding: 0 2%;
+  margin: 0 auto;
+}
+
+#footer .footer__container .footer__menu__list {
+  display: inline-block;
+}
+
+.footer__menu__list h2 {
+  color: #fff;
+  margin: 10px 0 5px;
+  font-size: calc(12pt + 0.4vw);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer__menu__list ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__menu__list ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__menu__list ul li a:hover {
+  color: rgb(80, 79, 79);
+}
+
+#footer img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.footer_company-logo {
+  width: 30%;
+}
+
+.footer__rights {
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 0;
+  margin-top: 4rem;
+}
+
+.footer__rights__container {
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+  padding: 0 2%;
+  margin: 0 auto;
+}
+
+.footer__rights .footer__rights__container .center {
+  font-size: 1rem;
+}
 /*=============================== END OF FOOTER SECTION ===============================*/
 
 /*=============================== MEDIA QUERIES ===============================*/
