@@ -468,6 +468,7 @@ figure.reviews__Comment .reviewer h5 span {
   font-weight: 400;
   text-transform: none;
   padding-left: 5px;
+  font-size: 0.6rem;
 }
 /*=============================== END OF REVIEWS SECTION =============================== */
 
@@ -706,11 +707,27 @@ figure.reviews__Comment .reviewer h5 span {
     padding: 0.5em 2em;
   }
   /*=============================== END OF NAVBAR MENU ===============================*/
+  .menu__item--title {
+    font-size: clamp(2.5em, 2.1vw, 2.1em);
+  }
+  .menu__item--desc {
+    font-size: 1.3rem;
+  }
+  .menu__item--value {
+    font-size: clamp(2.5em, 2.1vw, 1.7em);
+  }
+  .menu__item--buy {
+    font-size: 1.5rem;
+  }
+
   figure.reviews__Comment blockquote {
     font-size: 1.4rem;
   }
   figure.reviews__Comment .reviewer h5 {
     font-size: 1.25em;
+  }
+  figure.reviews__Comment .reviewer h5 span {
+    font-size: 1rem;
   }
 }
 
