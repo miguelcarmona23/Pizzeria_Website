@@ -52,7 +52,7 @@ a {
   flex-direction: column;
   position: absolute;
   left: 0;
-  top: 80px;
+  top: 78px;
   background-color: gray;
   width: 100%;
   height: 100vh;
@@ -168,6 +168,11 @@ a {
   justify-content: center;
   align-items: center;
   height: auto;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  border-bottom: 1px solid #f2f2f2;
 }
 /*=============================== END OF NAVBAR SECTION ===============================*/
 

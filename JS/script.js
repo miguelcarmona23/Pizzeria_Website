@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 This will cause the navbar menu to open and close by
 clicking on the .hamburger-menu button
@@ -9,3 +11,6 @@ ham.addEventListener('click', () => {
     nav.classList.toggle('nav-toggle');
     ham.classList.toggle('close');
 })
+
+
+// STICKY NAVBAR
