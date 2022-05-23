@@ -692,6 +692,14 @@ figure.reviews__Comment .reviewer h5 span {
   /*=============================== END OF NAVBAR MENU ===============================*/
 }
 
+/*=============================== MENU SECTION ===============================*/
+@media only screen and (max-width: 520px) {
+  .menu__item {
+    width: 100%;
+  }
+}
+/*=============================== END OF MENU SECTION ===============================*/
+
 /*=============================== NAVBAR MENU ===============================*/
 @media only screen and (max-width: 435px) {
   .header header .brand-logo img {
