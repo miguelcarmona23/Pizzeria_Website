@@ -275,6 +275,7 @@ a {
 .menu__item {
   /* width: clamp(320px, 65%, 65%); */
   /* width: clamp(320px, 35%, 35%); */
+  flex: 1 0 21%; /* explanation below */
   width: clamp(23ch, 60%, 46ch);
   padding: 24px;
 }
@@ -608,6 +609,15 @@ figure.reviews__Comment .reviewer h5 span {
 
 /*=============================== MEDIA QUERIES ===============================*/
 
+/* MENU SECTION */
+/* @media only screen and (max-width: 1660px) {
+  .menu__item:nth-child(4) {
+    flex: 1 0 21%;
+  }
+} */
+
+/* END OF MENU SECTION */
+
 /*=============================== NAVBAR MENU ===============================*/
 @media only screen and (min-width: 1200px) {
   .header .navBar {
@@ -653,6 +663,12 @@ figure.reviews__Comment .reviewer h5 span {
   }
 }
 
+@media only screen and (max-width: 865px) {
+  .menu__item {
+    flex: none;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   html {
     font-size: 10px;
@@ -693,7 +709,7 @@ figure.reviews__Comment .reviewer h5 span {
 }
 
 /*=============================== MENU SECTION ===============================*/
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 540px) {
   .menu__item {
     width: 100%;
   }
