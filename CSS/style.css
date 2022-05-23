@@ -706,6 +706,12 @@ figure.reviews__Comment .reviewer h5 span {
     padding: 0.5em 2em;
   }
   /*=============================== END OF NAVBAR MENU ===============================*/
+  figure.reviews__Comment blockquote {
+    font-size: 1.4rem;
+  }
+  figure.reviews__Comment .reviewer h5 {
+    font-size: 1.25em;
+  }
 }
 
 /*=============================== MENU SECTION ===============================*/
