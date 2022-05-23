@@ -572,10 +572,11 @@ figure.reviews__Comment .reviewer h5 span {
   list-style: none;
   padding: 0;
   margin: 0;
+  color: rgba(101, 99, 99, 1);
 }
 
 .footer__menu__list ul li a:hover {
-  color: rgb(80, 79, 79);
+  color: rgb(255, 255, 255);
 }
 
 #footer img {
@@ -731,6 +732,20 @@ figure.reviews__Comment .reviewer h5 span {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  #footer .footer__container {
+    justify-content: space-around;
+    text-align: center;
+  }
+  #footer .footer__company-logo {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed #909090;
+  }
+}
+
 /*=============================== MENU SECTION ===============================*/
 @media only screen and (max-width: 540px) {
   .menu__item {
@@ -738,7 +753,23 @@ figure.reviews__Comment .reviewer h5 span {
   }
 }
 /*=============================== END OF MENU SECTION ===============================*/
+@media only screen and (max-width: 505px) {
+  #footer {
+    padding: 0;
+  }
 
+  #footer .footer__container {
+    margin: 0;
+  }
+
+  #footer .mp-block-54 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed #909090;
+  }
+}
 /*=============================== NAVBAR MENU ===============================*/
 @media only screen and (max-width: 435px) {
   .header header .brand-logo img {
