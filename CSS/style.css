@@ -73,15 +73,18 @@ a {
   padding-bottom: 10px;
 }
 
-.header header .navBar .nav-list li {
+/* .header header .navBar .nav-list li {
   padding: 5px 0;
-}
+} */
 
 .header header .navBar .nav-list li a {
   font-size: 3rem;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  padding: 0 25px;
+  line-height: 55px;
+  display: block;
 }
 
 .header .navBar nav .nav-list li a:hover {
@@ -624,7 +627,7 @@ figure.reviews__Comment .reviewer h5 span {
     padding-bottom: 0;
   }
   .header .navBar nav .nav-list li {
-    padding: 0 10px;
+    /* padding: 0 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
