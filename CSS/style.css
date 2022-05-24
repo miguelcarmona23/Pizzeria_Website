@@ -592,8 +592,8 @@ figure.reviews__Comment .reviewer h5 span {
 .footer__rights {
   text-align: center;
   font-size: 0.8em;
-  margin-bottom: 0;
-  margin-top: 4rem;
+  /* margin: 4rem 0 0 0; */
+  padding: 4rem 0;
 }
 
 .footer__rights__container {
@@ -730,6 +730,10 @@ figure.reviews__Comment .reviewer h5 span {
   figure.reviews__Comment .reviewer h5 span {
     font-size: 1rem;
   }
+
+  .footer__menu__list ul li {
+    font-size: calc(10pt + 0.4vw);
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -770,6 +774,16 @@ figure.reviews__Comment .reviewer h5 span {
     border-top: 1px dashed #909090;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  #footer .footer__container .footer__menu__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
 /*=============================== NAVBAR MENU ===============================*/
 @media only screen and (max-width: 435px) {
   .header header .brand-logo img {
@@ -781,3 +795,9 @@ figure.reviews__Comment .reviewer h5 span {
   }
 }
 /*=============================== END OF NAVBAR MENU ===============================*/
+@media only screen and (max-width: 450px) {
+  #footer .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
