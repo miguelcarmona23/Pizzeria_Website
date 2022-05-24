@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 This will cause the navbar menu to open and close by
 clicking on the .hamburger-menu button

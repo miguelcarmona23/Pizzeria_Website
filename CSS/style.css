@@ -52,7 +52,7 @@ a {
   flex-direction: column;
   position: absolute;
   left: 0;
-  top: 80px;
+  top: 78px;
   background-color: gray;
   width: 100%;
   height: 100vh;
@@ -73,15 +73,18 @@ a {
   padding-bottom: 10px;
 }
 
-.header header .navBar .nav-list li {
+/* .header header .navBar .nav-list li {
   padding: 5px 0;
-}
+} */
 
 .header header .navBar .nav-list li a {
   font-size: 3rem;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  padding: 0 25px;
+  line-height: 55px;
+  display: block;
 }
 
 .header .navBar nav .nav-list li a:hover {
@@ -168,6 +171,11 @@ a {
   justify-content: center;
   align-items: center;
   height: auto;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  border-bottom: 1px solid #f2f2f2;
 }
 /*=============================== END OF NAVBAR SECTION ===============================*/
 
@@ -267,6 +275,7 @@ a {
 .menu__item {
   /* width: clamp(320px, 65%, 65%); */
   /* width: clamp(320px, 35%, 35%); */
+  flex: 1 0 21%; /* explanation below */
   width: clamp(23ch, 60%, 46ch);
   padding: 24px;
 }
@@ -334,6 +343,7 @@ a {
   background-color: white;
   color: #9d3b3b;
   border: 1px #9d3b3b solid;
+  cursor: pointer;
 }
 /*=============================== END OF MENU SECTION =============================== */
 
@@ -458,6 +468,7 @@ figure.reviews__Comment .reviewer h5 span {
   font-weight: 400;
   text-transform: none;
   padding-left: 5px;
+  font-size: 0.6rem;
 }
 /*=============================== END OF REVIEWS SECTION =============================== */
 
@@ -481,7 +492,7 @@ figure.reviews__Comment .reviewer h5 span {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 1rem;
 }
 
@@ -504,7 +515,7 @@ figure.reviews__Comment .reviewer h5 span {
   color: white;
   border: 1px #9d3b3b solid;
   border-radius: 4px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   padding: 0.5em 2em;
 }
 
@@ -561,10 +572,11 @@ figure.reviews__Comment .reviewer h5 span {
   list-style: none;
   padding: 0;
   margin: 0;
+  color: rgba(101, 99, 99, 1);
 }
 
 .footer__menu__list ul li a:hover {
-  color: rgb(80, 79, 79);
+  color: rgb(255, 255, 255);
 }
 
 #footer img {
@@ -580,8 +592,8 @@ figure.reviews__Comment .reviewer h5 span {
 .footer__rights {
   text-align: center;
   font-size: 0.8em;
-  margin-bottom: 0;
-  margin-top: 4rem;
+  /* margin: 4rem 0 0 0; */
+  padding: 4rem 0;
 }
 
 .footer__rights__container {
@@ -598,6 +610,15 @@ figure.reviews__Comment .reviewer h5 span {
 /*=============================== END OF FOOTER SECTION ===============================*/
 
 /*=============================== MEDIA QUERIES ===============================*/
+
+/* MENU SECTION */
+/* @media only screen and (max-width: 1660px) {
+  .menu__item:nth-child(4) {
+    flex: 1 0 21%;
+  }
+} */
+
+/* END OF MENU SECTION */
 
 /*=============================== NAVBAR MENU ===============================*/
 @media only screen and (min-width: 1200px) {
@@ -619,7 +640,7 @@ figure.reviews__Comment .reviewer h5 span {
     padding-bottom: 0;
   }
   .header .navBar nav .nav-list li {
-    padding: 0 10px;
+    /* padding: 0 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -641,6 +662,12 @@ figure.reviews__Comment .reviewer h5 span {
     background: linear-gradient(rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0.4111)),
       url("/Images/hero_Photo_1920x1281.jpg") no-repeat center / cover;
     color: white;
+  }
+}
+
+@media only screen and (max-width: 865px) {
+  .menu__item {
+    flex: none;
   }
 }
 
@@ -681,6 +708,80 @@ figure.reviews__Comment .reviewer h5 span {
     padding: 0.5em 2em;
   }
   /*=============================== END OF NAVBAR MENU ===============================*/
+  .menu__item--title {
+    font-size: clamp(2.5em, 2.1vw, 2.1em);
+  }
+  .menu__item--desc {
+    font-size: 1.3rem;
+  }
+  .menu__item--value {
+    font-size: clamp(2.5em, 2.1vw, 1.7em);
+  }
+  .menu__item--buy {
+    font-size: 1.5rem;
+  }
+
+  figure.reviews__Comment blockquote {
+    font-size: 1.4rem;
+  }
+  figure.reviews__Comment .reviewer h5 {
+    font-size: 1.25em;
+  }
+  figure.reviews__Comment .reviewer h5 span {
+    font-size: 1rem;
+  }
+
+  .footer__menu__list ul li {
+    font-size: calc(10pt + 0.4vw);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #footer .footer__container {
+    justify-content: space-around;
+    text-align: center;
+  }
+  #footer .footer__company-logo {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed #909090;
+  }
+}
+
+/*=============================== MENU SECTION ===============================*/
+@media only screen and (max-width: 540px) {
+  .menu__item {
+    width: 100%;
+  }
+}
+/*=============================== END OF MENU SECTION ===============================*/
+@media only screen and (max-width: 505px) {
+  #footer {
+    padding: 0;
+  }
+
+  #footer .footer__container {
+    margin: 0;
+  }
+
+  #footer .mp-block-54 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed #909090;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #footer .footer__container .footer__menu__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 /*=============================== NAVBAR MENU ===============================*/
@@ -688,5 +789,15 @@ figure.reviews__Comment .reviewer h5 span {
   .header header .brand-logo img {
     width: 80%;
   }
+  .downloadMenu--title h2 {
+    font-size: 2rem;
+    margin: 0 12vw 0 0;
+  }
 }
 /*=============================== END OF NAVBAR MENU ===============================*/
+@media only screen and (max-width: 450px) {
+  #footer .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
