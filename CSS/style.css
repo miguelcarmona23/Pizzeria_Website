@@ -822,8 +822,33 @@ textarea {
     font-size: 1rem;
   }
 }
-
 /*=============================== END OF CONTACT SECTION ===============================*/
+
+/*=============================== MENU PAGE SECTION ===============================*/
+#menuPage {
+  position: relative;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.menuPage__Title {
+  font-size: 4rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.menuPage__Container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.menuPage__Image {
+  width: 100%;
+  height: 100%;
+}
+
+/*=============================== END OF MENU PAGE SECTION ===============================*/
 
 /*=============================== MEDIA QUERIES ===============================*/
 
