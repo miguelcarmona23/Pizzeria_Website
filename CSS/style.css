@@ -109,6 +109,7 @@ a {
   border: 1px #9d3b3b solid;
   color: white;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .header header .navBar .navBar-button a:hover {
