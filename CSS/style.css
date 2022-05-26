@@ -994,6 +994,14 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .browser-safari #reviews {
+    background-size: cover;
+    background-position: top center;
+    background-attachment: initial;
+  }
+}
+
 @media only screen and (max-width: 670px) {
   .header .navBar nav {
     top: 80px;
