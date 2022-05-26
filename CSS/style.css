@@ -1005,10 +1005,6 @@ textarea {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    -webkit-background-fixed: fixed;
-    -moz-background-fixed: fixed;
-    -o-background-fixed: fixed;
-    background-attachment: fixed;
   }
 }
 
