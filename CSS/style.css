@@ -586,8 +586,8 @@ figure.reviews__Comment .reviewer h5 span {
   height: auto;
 }
 
-.footer_company-logo {
-  width: 30%;
+.footer__company-logo {
+  width: 45%;
 }
 
 .footer__rights {
