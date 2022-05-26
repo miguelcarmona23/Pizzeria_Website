@@ -53,7 +53,7 @@ a {
   /* position: absolute; */
   position: fixed;
   left: 0;
-  top: 78px;
+  top: 120px;
   background-color: gray;
   width: 100%;
   height: 100vh;
@@ -973,6 +973,10 @@ textarea {
   .footer__menu__list ul li {
     font-size: calc(10pt + 0.4vw);
   }
+
+  .header .navBar nav {
+    top: 95px;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -986,6 +990,12 @@ textarea {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 1px dashed #909090;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .header .navBar nav {
+    top: 80px;
   }
 }
 
