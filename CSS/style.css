@@ -50,7 +50,8 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   left: 0;
   top: 78px;
   background-color: gray;
