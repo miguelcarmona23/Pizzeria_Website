@@ -995,10 +995,16 @@ textarea {
 }
 
 @media only screen and (max-width: 800px) {
-  .browser-safari #reviews {
+  #reviews {
+    background: linear-gradient(
+        rgba(157, 59, 59, 0.502),
+        rgba(157, 59, 59, 0.902)
+      ),
+      url(../Images/reviewsSection_bg.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-position: top center;
-    background-attachment: initial;
   }
 }
 
