@@ -50,7 +50,6 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* position: absolute; */
   position: fixed;
   left: 0;
   top: 120px;
@@ -74,10 +73,6 @@ a {
   padding-bottom: 10px;
 }
 
-/* .header header .navBar .nav-list li {
-  padding: 5px 0;
-} */
-
 .header header .navBar .nav-list li a {
   font-size: 3rem;
   text-decoration: none;
@@ -97,7 +92,6 @@ a {
   padding: 10px;
   display: block;
   width: 100%;
-  /* border-top: 0.5px solid rgba(255, 255, 255, 0.733); */
 }
 
 .header header .navBar .navBar-button a {
@@ -186,30 +180,18 @@ a {
   width: 100%;
   height: 100vh;
   background: url("/Images/hero_Photo_1920x1281.jpg") no-repeat center / cover;
-
-  /* The linear-gradient adds a overlay to improve text readability */
-  /* background: linear-gradient(rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0.4111)),
-    url("/Landing_Page_Template/Images/hero_Photo_1920x1281.jpg") no-repeat
-      center / cover; */
-
-  /* The color code will add that color to the entire section */
-  /* color: white; */
 }
 
 .container {
   width: 90%;
   height: 100%;
   max-width: 1200px;
-  /* margin: 0 auto; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* To move the content to the right Part 1/2 */
-  /* text-align: right; */
 }
 
 .container .info h1 {
-  /* The html font-size is 18px. So 18 * 3 will be 54px/ Always use rem or em instead of px */
   font-size: 4rem;
   margin-bottom: 1rem;
 }
@@ -221,13 +203,7 @@ a {
 
 .container .info p {
   font-size: 1.5rem;
-  /* The reason why the p tag has 70% width
-  is so that it doesn't stretch all the way across
-   the .container. It only stretches 70% of the container  */
   max-width: 55%;
-  /* To move the p tag to the right Part 2/2 */
-  /* margin: 0 auto;
-  margin-right: 0; */
 }
 
 .container .info a {
@@ -253,7 +229,6 @@ a {
 /*=============================== MENU SECTION ===============================*/
 #menu {
   width: 100%;
-  /* height: 100vh; */
   min-height: 100vh;
   padding: 45px 0;
 }
@@ -275,9 +250,7 @@ a {
 }
 
 .menu__item {
-  /* width: clamp(320px, 65%, 65%); */
-  /* width: clamp(320px, 35%, 35%); */
-  flex: 1 0 21%; /* explanation below */
+  flex: 1 0 21%;
   width: clamp(23ch, 60%, 46ch);
   padding: 24px;
 }
@@ -315,15 +288,10 @@ a {
 }
 
 .menu__item--title {
-  /* margin: 0; */
   margin-bottom: 1rem;
   font-size: clamp(1.4em, 2.1vw, 2.1em);
   font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 }
-/* .menu__item--title a {
-  text-decoration: none;
-  color: inherit;
-} */
 
 .menu__item--value {
   font-size: clamp(1.4em, 2.1vw, 1.7em);
@@ -363,7 +331,6 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* min-height: 100vh; */
 }
 
 .reviews__Title {
@@ -381,11 +348,9 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* min-height: 100vh; */
 }
 
 figure.reviews__Comment {
-  /* font-family: "Raleway", Arial, sans-serif; */
   position: relative;
   overflow: hidden;
   margin: 10px;
@@ -415,7 +380,6 @@ figure.reviews__Comment blockquote {
   border-radius: 8px;
   position: relative;
   background-color: #fafafa;
-  /* padding: 25px 50px 30px 50px; */
   padding: 25px 65px;
   font-size: 1em;
   font-weight: 500;
@@ -505,11 +469,6 @@ figure.reviews__Comment .reviewer h5 span {
   margin: 0 15vw 0 0;
 }
 
-/* .downloadMenu--button button a {
-  font-size: calc(17pt + 1.25vw);
-  letter-spacing: 3px;
-} */
-
 .downloadMenu--clickBtn {
   text-decoration: none;
   display: inline-block;
@@ -594,7 +553,6 @@ figure.reviews__Comment .reviewer h5 span {
 .footer__rights {
   text-align: center;
   font-size: 0.8em;
-  /* margin: 4rem 0 0 0; */
   padding: 4rem 0;
 }
 
@@ -850,17 +808,6 @@ textarea {
 /*=============================== END OF MENU PAGE SECTION ===============================*/
 
 /*=============================== MEDIA QUERIES ===============================*/
-
-/* MENU SECTION */
-/* @media only screen and (max-width: 1660px) {
-  .menu__item:nth-child(4) {
-    flex: 1 0 21%;
-  }
-} */
-
-/* END OF MENU SECTION */
-
-/*=============================== NAVBAR MENU ===============================*/
 @media only screen and (min-width: 1200px) {
   .header .navBar {
     width: auto;
@@ -880,7 +827,6 @@ textarea {
     padding-bottom: 0;
   }
   .header .navBar nav .nav-list li {
-    /* padding: 0 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -894,9 +840,7 @@ textarea {
     display: none;
   }
 }
-/*=============================== END OF NAVBAR MENU ===============================*/
 
-/*=============================== HERO SECTION ===============================*/
 @media only screen and (max-width: 1000px) {
   #hero {
     background: linear-gradient(rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0.4111)),
@@ -908,6 +852,34 @@ textarea {
 @media only screen and (max-width: 865px) {
   .menu__item {
     flex: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #footer .footer__container {
+    justify-content: space-around;
+    text-align: center;
+  }
+  #footer .footer__company-logo {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed #909090;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #reviews {
+    background: linear-gradient(
+        rgba(157, 59, 59, 0.502),
+        rgba(157, 59, 59, 0.902)
+      ),
+      url(../Images/reviewsSection_bg.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 
@@ -940,23 +912,24 @@ textarea {
     max-width: 100%;
     font-size: 1.4rem;
   }
-  /*=============================== END OF HERO SECTION ===============================*/
 
-  /*=============================== NAVBAR MENU ===============================*/
   .header header .navBar .navBar-button a {
     font-size: 1.8rem;
     padding: 0.5em 2em;
   }
-  /*=============================== END OF NAVBAR MENU ===============================*/
+
   .menu__item--title {
     font-size: clamp(2.5em, 2.1vw, 2.1em);
   }
+
   .menu__item--desc {
     font-size: 1.3rem;
   }
+
   .menu__item--value {
     font-size: clamp(2.5em, 2.1vw, 1.7em);
   }
+
   .menu__item--buy {
     font-size: 1.5rem;
   }
@@ -967,6 +940,7 @@ textarea {
   figure.reviews__Comment .reviewer h5 {
     font-size: 1.25em;
   }
+
   figure.reviews__Comment .reviewer h5 span {
     font-size: 1rem;
   }
@@ -980,47 +954,18 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 850px) {
-  #footer .footer__container {
-    justify-content: space-around;
-    text-align: center;
-  }
-  #footer .footer__company-logo {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px dashed #909090;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  #reviews {
-    background: linear-gradient(
-        rgba(157, 59, 59, 0.502),
-        rgba(157, 59, 59, 0.902)
-      ),
-      url(../Images/reviewsSection_bg.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-}
-
 @media only screen and (max-width: 670px) {
   .header .navBar nav {
     top: 80px;
   }
 }
 
-/*=============================== MENU SECTION ===============================*/
 @media only screen and (max-width: 540px) {
   .menu__item {
     width: 100%;
   }
 }
-/*=============================== END OF MENU SECTION ===============================*/
+
 @media only screen and (max-width: 505px) {
   #footer {
     padding: 2rem;
@@ -1048,7 +993,13 @@ textarea {
   }
 }
 
-/*=============================== NAVBAR MENU ===============================*/
+@media only screen and (max-width: 450px) {
+  #footer .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media only screen and (max-width: 435px) {
   .header header .brand-logo img {
     width: 80%;
@@ -1057,12 +1008,5 @@ textarea {
     font-size: 1.6rem;
     letter-spacing: 0;
     margin: 0 12vw 0 0;
-  }
-}
-/*=============================== END OF NAVBAR MENU ===============================*/
-@media only screen and (max-width: 450px) {
-  #footer .footer__container {
-    flex-direction: column;
-    align-items: center;
   }
 }
