@@ -179,7 +179,7 @@ a {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("/Images/hero_Photo_1920x1281.jpg") no-repeat center / cover;
+  background: url("/Images/hero_Photo_1920x1281.webp") no-repeat center / cover;
 }
 
 .container {
@@ -326,7 +326,7 @@ a {
       rgba(157, 59, 59, 0.502),
       rgba(157, 59, 59, 0.902)
     ),
-    url(../Images/reviewsSection_bg.jpg);
+    url(../Images/reviewsSection_bg.webp);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -844,7 +844,7 @@ textarea {
 @media only screen and (max-width: 1000px) {
   #hero {
     background: linear-gradient(rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0.4111)),
-      url("/Images/hero_Photo_1920x1281.jpg") no-repeat center / cover;
+      url("/Images/hero_Photo_1920x1281.webp") no-repeat center / cover;
     color: white;
   }
 }
@@ -875,7 +875,7 @@ textarea {
         rgba(157, 59, 59, 0.502),
         rgba(157, 59, 59, 0.902)
       ),
-      url(../Images/reviewsSection_bg.jpg) no-repeat center center;
+      url(../Images/reviewsSection_bg.webp) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -889,7 +889,7 @@ textarea {
   }
   #hero {
     background: linear-gradient(rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0.4111)),
-      url("/Images/hero_Photo_1920x1281.jpg") no-repeat center / cover;
+      url("/Images/hero_Photo_1920x1281.webp") no-repeat center / cover;
     color: white;
   }
   .container {
